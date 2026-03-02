@@ -1,0 +1,24 @@
+376
+
+MAY AND OCTOBER COTTON FUTURES ON NEW YORK
+
+COTTON EXCHANGE
+
+[et [ime [oe
+
+COTTON SPOTS AND JULY OPTION MONTHS OF YEARLY
+HIGH AND LOW
+
+1920 July 1931 Mar.
+
+1921 Sept Sept. June
+1922 Dec July Feb.
+1923 Nov Aug. Jan.
+1924 Dec Jan. & Feb. Mar.
+1925 Mar July Jan.
+1926 Jan Apr. Oct.
+1927 Sept Mar. Dec.
+1928 June Sept. Feb.
+1929 Apr. May
+
+Sept.

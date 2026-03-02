@@ -1,0 +1,19 @@
+How To MAKE PROFITS
+TRADING IN COMMODITIES
+
+A STUDY OF THE COMMODITY MARKET
+
+With Charts and Rules for
+Successful Trading and
+Investing
+
+BY
+
+W. D. GANN
+
+€
+
+Published by
+LIBRARY OF GANN PUBLISHING CO. INC.
+P.O. Box O
+POMEROY, WA 99347

@@ -1,0 +1,43 @@
+COTTON SEED OIL PRICES IN NEW YORK SINCE 1875
+In cents per Pound.
+
+YEARLY AVERAGE SPOT PRICES OF PRIME SUMMER YELLOW COTTON
+SEED OIL IN NEW YORK
+
+Year | Price Year { Price
+
+MONTHLY AVERAGE PRICES OF PRIME SUMMER YELLOW COTTON SEED
+OIL IN NEW YORK
+
+Month | SPOT PRICE NEAR FUTURE ON N.Y. PRODUCE EXCHANGE
+1929 | 1930 11931 | 1932 | 1933 | 1934 | 1935 | 1936 | 1937} 1938 139 [so 19412
+
+Jan. 10.3} 85) 721 411 36| 47/109) 101 [ila | 741 211 69 | 64
+
+Feb, 10.5] 385) 73! 41] 35) 52114] 97/110! 79) 67] 69] 62
+
+Mar. |10.7| 84] 76! 46) 37) 52/108) 94 lula! 82/69) 67{ 72
+
+Apr. 10.1; 38! 74! 341 40} 52 (103 | 94 |10.6 | 82 | 66 | 68} 86
+
+May 94) 88! 69} 32} 50] 50/105] 88 105 | 81 | 66 | 64
+
+June =| 9.4 85/ 671 32] 561 53/101] 92 1100/80] 65 | 60
+
+July 9.7| 8.0) 7.0] 381 64} 591 96} 981 921 86] 61 | 60
+
+Aue. 9.7; 83] 5.4{ 45] 521 68! 99/102] 80! 81155 | 5.6
+
+Sept. 92} 82] 42] 45! 47] 75 102 1021 741 781 71 | 5.6
+
+Oct. 94| 76) 44) 40] 42] 811104! 99] 731 76] 68 | 54
+
+Nov. 90| 76! 45) 3.71 45} 921/103 \1o0 | 71 | 74 | 65 53
+
+Dec. 10.1 }10.7 | 11.0
+
+YEARLY 9.7) 8.2! 61) 38] 45] 65) 65 }104 9.2 | 7.9 | 6.6
+AVERAG
+
+'Prices after Dee. 1931 are for Bleachable Prime Summer Yellow.
+*Bleachable Prime Summer Yellow, Cash, in Tanks, N.Y.

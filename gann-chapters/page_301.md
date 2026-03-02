@@ -1,0 +1,95 @@
+TIME PERIODS, RESISTANCE LEVELS, ETC.
+
+283
+
+1940
+
+September, HIGH 415; LOW 385.
+
+October, HIGH 425; LOW 405.
+
+November, HIGH 420; LOW 405.
+December, HIGH 440; LOW 415.
+
+1941
+
+January, HIGH 445; LOW 425.
+February, HIGH 510; LOW 425.
+March, HIGH 695; LOW 505.
+April, HIGH 670; LOW 595.
+May, HIGH 760; LOW 595.
+
+June, HIGH 605; LOW 500.
+July, HIGH 605; LOW 525.’
+August, HIGH 665; LOW 615.
+September, HIGH 675; LOW 600.
+October, HIGH 635; LOW 585.
+
+DECEMBER BLACK PEPPER FUTURES——-MONTHLY:
+1937
+
+June, HIGH 630; LOW 587.
+July, HIGH 635; LOW 585.
+August, HIGH 690; LOW 625.
+
+September, HIGH 675; LOW 575.
+October, HIGH 555; LOW 465.
+November, HIGH 515; LOW 475.
+
+December, HIGH 510: LOW 500.
+
+1938
+
+January, HIGH 560; LOW 555.
+February, HIGH 705; LOW 590.
+March, HIGH 680; LOW 570.
+April, HIGH 605; LOW 545.
+May, HIGH 575; LOW 505.
+June, HIGH 565; LOW 505.
+
+July, HIGH 565; LOW 505.
+August, HIGH 495; LOW 450.
+September, HIGH 475; LOW 450.
+October, HIGH 515; LOW 485.
+November, HIGH 495; LOW 445.
+December, HIGH 455: LOW 410.
+
+1939
+
+January, HIGH 525; LOW 410.
+February, HIGH 450; LOW 405.
+March, HIGH 445; LOW 340.
+April, HIGH 370; LOW 340.
+May, HIGH 365; LOW 310.
+June, HIGH 340; LOW 315.
+
+July, HIGH 355; LOW 327.
+August, HIGH 340: LOW 302.
+September, HIGH 445; LOW 350.
+October, HIGH 410; LOW 365.
+November, HIGH 385; LOW 345.
+December, HIGH 425; LOW 400.
+
+1940
+
+January, HIGH 465; LOW 425.
+February, HIGH 440; LOW 415.
+March, HIGH 435; LOW 405.
+April, HIGH 420; LOW 400.
+May, HIGH 430; LOW 345.
+June, HIGH 360; LOW 345.
+
+July, HIGH 360; LOW 330.
+August, HIGH 365; LOW 350.
+September, HIGH 385; LOW 365.
+October, HIGH 395; LOW 380.
+November, HIGH 390: LOW 380.
+December, HIGH 415; LOW 385.
+
+1941
+
+January, HIGH 465; LOW 445.
+February, HIGH 525; LOW 445.
+
+March, HIGH 705; LOW 515.
+April, HIGH 685; LOW 615.

@@ -1,0 +1,43 @@
+110 HOW TO MAKE PROFITS IN COMMODITIES
+
+WHEAT SWINGS 1841 TO 1941
+
+Advance Time
+High Low or Decline in Months
+
+1841 Sept. to 110
+
+1843 Feb. and Mar. to 30 90 18
+1845 Dec. to 90 60 34
+1846 June and July 35 55 6
+1848 Sept. to 95 60 26
+1849 June 50 45 9
+1850 May to 103 53 12
+1852 Apr. 28 15 23
+1854 June to 130 102 26
+1854 Oct. 90 40 4
+1855 July to 170 80 8
+1855 Aug. 100 70 1
+1855 Nov. to 146 46 3
+1855 Dec. 125 11 1
+1856 Jan. to 135 10 1
+1856 Nov. 77 69 12
+1857 July to 127 50 8
+1858 Feb. 52 75 | 7
+1858 Aug. to 100 48 | 6
+1858 Nov. 54 46 | 3
+1859 May to 130 76 | 6
+1859 Aug. 50 80 3
+1860 May to 114 64 9
+1860 Dec. 66 48 7
+1861 May to 125 59 5
+1861 July 55 70 2
+1861 Oct. to 73 20 3
+1862 Jan. 64 | li 3
+1862 Aug. to 92 | 28 6
+1862 Nov. 1 17 3
+1863 Aug. 112 37 4
+
+1863 Mar. to 80 42
+
+on

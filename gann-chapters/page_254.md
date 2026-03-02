@@ -1,0 +1,52 @@
+236
+
+HOW TO MAKE PROFITS IN COMMODITIES
+
+COTTON SWINGS FROM HIGH TO LOW (Contiuued)
+TIME PERIODS
+
+Advance or Time
+Year Price Decline Months
+1933 Jan. 690 105 1
+Feb, 615 75 1
+July 1200 585 5
+Aug. 840 360 1
+Sept. 1040 200 1
+Oct, 860 180 1 :
+1934 Feb. 1290 430 4 3
+May 1085 205 3 :
+Aug. 1395 310 3 ‘
+Nov. 1170 220 3 :
+1935 Jan. 1270 100 2
+Mar. 1¢00 270 2
+May 1190 190 2
+Sept. 1030 160 4
+Nov. 1145 115 2
+1936 Jan, 985 160 2 ;
+Feb, 1060 75 l ‘
+Mar. 990 70 1 ‘
+July 1275 285 4
+Sept. 1130 145 2
+Oct. 1240 110 1
+Nov. 1110 130 1 .
+1937 Apr. 1395 285 5 J
+Oct. 780 615 | 6 :
+1938 Mar. 950 170 5 :
+June 770 180 3 3
+July 915 145 1 i
+Dec. 705 210 5 ;
+1939 Sept. 1015 310 9 ‘
+Nov. 795 220 2 Fe
+1940 Jan. 1615 220 | 2 :
+Feb. 910 105 1 7
+Apr. 1025 115 2 :
+May 845 180 1
+June 965 120 ]
+July 900 65 1
+Oct. 980 80 3
+Nov. 870 110 1
+1941 July 28 1760 890 8
+Aug. 13 1582 178 16 days
+Sept. 12 1846 264 30 days
+
+Oct. 16 1557 289 34 days

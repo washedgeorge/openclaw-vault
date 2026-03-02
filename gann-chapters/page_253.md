@@ -1,0 +1,52 @@
+TIME PERIODS, RESISTANCE LEVELS, ETC. 233
+
+COTTON SWINGS FROM HIGH TO LOW (Continued)
+TIME PERIODS
+
+Advance or Time
+Year Price Decline Months
+1910 Jan. 1350 295 1
+Feb. 1495 145 ]
+Apr. 1390 105 2
+May 1570 180 1
+June 1410 160 1
+July 1655 245 1
+Sept. 1290 365 2
+Dec. 1540 250 3
+191] Feb. 1370 170 2
+May 1610 240 3
+Dec. 885 725 7
+1912 July 1300 | 415 7
+Oct. 1070 ) 230 3
+Dec. 1300 230 2
+1913 Jan. 1160 140 l
+Feb. 1240 80 1
+Apr. 1120 120 2
+Sept. 1385 265 5
+1914 Mar. 1150 235 6
+June 1340 | 190 3
+Dec. 750 | 590 6
+1915 Apr. 1050 300 4
+July 810 210 3
+Oct. 1360 520 4
+First Section
+1915 Nov. 1185 175 1
+Dec. 1330 145 1
+1916 Feb. 1145 185 2
+June 1350 205 4
+July 1270 80 1
+Nov. 2150 | 880 4
+Second Section
+Dec. 1650 500 ]
+1917 Jan. 1910 260 1
+Feb. 1375 | 535 1
+July 2750 1375 5
+Third Section
+Sept. 2010 740 2
+1918 Jan. 3130 1120 4
+Feb. 2880 250 1
+Apr. 3380 500 2
+May 2310 1070 1
+Sept. 3550 1240 4
+
+4th Section

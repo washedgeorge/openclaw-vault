@@ -1,0 +1,55 @@
+385
+
+COFFEE SWINGS (Continued)
+HIGH AND LOW—RIO DE JANERIO
+Future—May and September Options
+
+Feb.
+Apr. Low 6.45
+May High 7.33
+Nov. Low 3.98
+1938 Jan. High 4.37
+Mar. Low 3.95
+Aug. High 4.77
+Sept. Low 4.23
+Oct. High 4.62
+Dec. Low 4.18
+1939 Feb. High 4.37
+Mar.
+Sept.
+
+1932 i . 1937
+Sept. Low 5.30
+Sept. High 6.35
+
+1933 Jan. Low 5.35
+Mar. High 5.87
+Apr. Low 5.12
+July High 8.00
+Oct. Low 5.40
+
+1934 Feb. High 8.90
+May Low 7.95
+
+MAY COFFEE—SANTOS “D” CONTRACT
+SWINGS FROM HIGH TO LOW
+
+COFFEE NO. 7—CONTRACT PRICES AT NEW YORK
+TRADING STARTED MARCH 7, 1882
+PRICES IN CENTS PER POUND
+
+1882 1903-1904 Low 1923
+1884 High ll, 1905 High 9% 1924 Low 6%
+1885 Low 6% | 1907 Low 5 1925 High 23.30
+1887 High 2714 | 1908 High 5 999 pow 10.90
+1888-1889 Low 9Yp 1912 High 15 1
+
+, 1931 Low 4.40
+1890 High 18% | 1914 Low 54, :
+
+) 1933 High 9.00
+
+1892 Low 10% 1917 High 9.90 1935 Low 4.10
+1893-1894 High 17%, 1918 Low 6.60 1936-1937 High 8.75
+1900 Low 4 1919 High 24.60 1937-1938 Low 3.60
+190} High 9, 192] Low 5 1939 High 4.00

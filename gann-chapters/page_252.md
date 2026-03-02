@@ -1,0 +1,121 @@
+232
+
+HOW TO MAKE PROFITS IN COMMODITIES
+
+COTTON SWINGS FROM HIGH TO LOW (Continued)
+
+Year
+
+1901
+
+1902
+
+1503
+
+1904
+
+1905
+
+1906
+
+1907
+
+1908
+
+1909
+
+May
+June
+July & Aug.
+Sept.
+Nov.
+
+May
+Sept.
+Oct.
+
+Nov.
+
+July
+Oct.
+
+Feb,
+Mar.
+Apr.
+Aug.
+Sept.
+Dec.
+
+Jan.
+Mar.
+Apr.
+July
+Aug.
+Sept.
+Oct.
+Dec.
+
+Apr.
+May
+Aug,
+
+Oct.
+
+Feb.
+July
+Nov.
+
+Jan.
+May
+May
+Oct.
+
+Jan.
+Mar.
+Dec.
+
+TIME PERIODS
+
+| Advance or Time
+Price Decline Months
+a
+750 | 265 7
+900 150 1
+915 185 2
+800 85 2
+720 80 2
+960 240 6
+810 150 4
+870 60 ]
+800 70 1
+920 575 8
+1275 455 3
+1755 835 4 .
+1275 480 1 ;
+1560 285 1
+980 580 4
+1100 220 1
+690 410 3
+685 5 1
+800 115 2
+705 95 1
+1110 405 3
+990 120 1!
+1120 130 l
+1000 | 120 1
+1260 260 2
+1030 | 230 4
+1140 | 110 1
+960 | 240 3
+1160 260 2
+920 | 240 | 4
+1250 330 5
+i000 | 230 | 4
+|
+1150 150 2
+810 | 340 4
+1140 330 l
+830 310 5
+970 | 140 3
+900 70 2
+1645 | 745 | )

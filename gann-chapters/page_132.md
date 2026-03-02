@@ -1,0 +1,39 @@
+116 HOW TO MAKE PROFITS IN COMMODITIES
+
+Wueat Swincs 1841 To 1941—Continued
+
+Advance Time
+High Low or Decline in Months
+— | |
+1914 July 16% 213, if
+Sept. 132 5514 2
+Oct. to 1114 2134 1
+1915 Feb. 167 5534 4
+Sept. to 93 74 7 5
+1916 Feb. 136 43 5
+June 102% 3314 4
+Nov. to 1953, 93\, 5
+1917 Feb. 15444 414 3
+May 325 1701% 3
+Aug. 19934 12544 3
+Aug. to 260 6014 1
+1918 June 217 43 40
+Dec, to 242 25 6
+1919 May 280 38 5
+Aug. 260 60 3
+Dec. to 350 90 4
+1920 Feb. 235 LIS 2
+May to 345 110 3
+1921 Mar. 13714 207% 10
+May 187 49 2
+July 114 73 2
+Sept. 14234 2834 2
+Nov. to 103 3914 2
+1922 Feb. 149% 4644 3
+Sept. 104% 4534 7
+Dec. to 12634 2214 3
+1923 Jan. 115% 11, if
+Apr. 12744 12 3
+June 101% 2534 2
+Oct, 14% 13% 4
+1924 Mar. to 100% 1434 5
