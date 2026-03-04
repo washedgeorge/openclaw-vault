@@ -1,0 +1,32 @@
+{
+  "bot_token": "YOUR_BOT_TOKEN_HERE",
+  "_comment_token": "Get this from https://discord.com/developers/applications -> Your Bot -> Bot -> Token",
+  "relays": [
+    {
+      "source_channel_id": 0,
+      "target_channel_id": 0,
+      "_comment_ids": "Right-click channel in Discord -> Copy ID (need Developer Mode enabled)",
+      "filter_keywords": [],
+      "_comment_filter": "Only relay messages containing these words (empty = relay all)",
+      "exclude_keywords": [
+        "spam",
+        "test"
+      ],
+      "_comment_exclude": "Don't relay messages containing these words",
+      "relay_embeds": true,
+      "relay_attachments": true,
+      "add_source_info": true,
+      "_comment_options": "What to include in relayed messages"
+    }
+  ],
+  "rate_limits": {
+    "messages_per_minute": 30,
+    "_comment_rate": "Stay well under Discord's rate limits"
+  },
+  "filters": {
+    "min_message_length": 5,
+    "ignore_bots": true,
+    "ignore_system": true,
+    "_comment_filters": "Global filters applied to all relays"
+  }
+}
