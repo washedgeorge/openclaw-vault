@@ -12,16 +12,16 @@
 ### **📚 Complete Documentation:**
 - ✅ **`SELFBOT_SETUP.md`** - Complete setup instructions
 - ✅ **`get_discord_token.md`** - Step-by-step token extraction guide
-- ✅ **`ULTRA_STEALTH_GUIDE.md`** - Ultra-stealth mode explained
+- ✅ **`BALANCED_STEALTH_GUIDE.md`** - Balanced stealth mode (default)
+- ✅ **`ULTRA_STEALTH_GUIDE.md`** - Ultra-stealth mode (maximum safety)
 - ✅ **`run_selfbot.sh`** - Easy runner script with safety checks
 
-### **🛡️ Ultra-Stealth Safety Features:**
-- ✅ **Ultra-conservative rate limits** - Max 6 messages/hour, 50/day
-- ✅ **Long random delays** - 3-15 minutes between relays (very human-like)
-- ✅ **Human activity patterns** - Slower during work hours, meal breaks, weekends
-- ✅ **Random idle periods** - 30min-2hr breaks with zero activity
-- ✅ **Enhanced content filtering** - Only high-quality, engaging messages
-- ✅ **Active hours only** - 9 AM - 10 PM with meal time skips
+### **⚖️ Balanced Stealth Safety Features:**
+- ✅ **Reasonable rate limits** - Max 15 messages/hour, 120/day
+- ✅ **1-5 minute random delays** - Fast enough to be useful, slow enough to be safe
+- ✅ **Active hours only** - 8 AM - 11 PM (consistent pattern)
+- ✅ **Content filtering** - Skips @mentions, bot commands, system messages
+- ✅ **Daily safety caps** - Prevents excessive usage patterns
 
 ---
 
@@ -106,28 +106,27 @@ cd /root/.openclaw/workspace
 - **Source attribution** shows which server each message came from
 - **Filtered content** - only see messages that matter
 
-### **Example Output (Ultra-Stealth Mode):**
+### **Example Output (Balanced Stealth Mode):**
 ```
-09:15 **[Crypto Trading #signals]** TraderBot:  
+08:03 **[Crypto Trading #signals]** TraderBot:  
 🚀 BTC breaking out above $70K resistance
 
-09:28 **[Dev Community #announcements]** Admin:
+08:07 **[Dev Community #announcements]** Admin:
 New feature release coming next week
 
-[45-minute idle period - no activity]
-
-11:42 **[News Server #breaking]** NewsBot:
+08:11 **[News Server #breaking]** NewsBot:
 BREAKING: Major economic announcement
 
-[Lunch break - 70% chance to skip relaying]
+08:13 **[Discord Server #general]** User123:
+Anyone else seeing this pump?
 ```
 
 ### **Timing Expectations:**
-- ⏰ **3-15 minutes** between relays (not instant)
-- 📊 **~6 messages per hour** maximum
-- 🍽️ **Meal time gaps** (12-1 PM, 6-7 PM often quiet)
-- 💤 **Random breaks** (30min-2hr periods of no activity)
-- 📅 **Slower weekends** (mimics human casual usage)
+- ⏰ **1-5 minutes** between relays (practical speed)
+- 📊 **~15 messages per hour** maximum (good coverage)
+- 🕐 **8 AM - 11 PM active hours** (consistent daily pattern)
+- 📅 **Same speed every day** (no complex patterns)
+- 🎯 **Daily limit: 120 messages** (safety cap)
 
 ---
 
@@ -151,27 +150,26 @@ BREAKING: Major economic announcement
 ]
 ```
 
-### **Ultra-Stealth Settings (Pre-configured):**
+### **Balanced Stealth Settings (Pre-configured):**
 ```json
 "stealth_settings": {
-  "min_delay_minutes": 3,         // 3-15 minute delays (not seconds!)
-  "max_delay_minutes": 15,        // Much slower but undetectable
-  "messages_per_hour": 6,         // Very conservative (was 20)
-  "messages_per_day": 50,         // Daily safety cap
-  "idle_periods": true,           // Random 30min-2hr breaks
-  "human_pattern": true,          // Meal breaks, work hour slowdowns
-  "weekend_slower": true,         // 30-50% slower on weekends
-  "active_start": 9,              // 9 AM start (not 8)
-  "active_end": 22                // 10 PM end (not 11)
+  "min_delay_minutes": 1,         // 1-5 minute delays 
+  "max_delay_minutes": 5,         // Practical but safe
+  "messages_per_hour": 15,        // Reasonable coverage
+  "messages_per_day": 120,        // Daily safety cap
+  "active_hours_only": true,      // 8 AM - 11 PM
+  "active_start": 8,              // 8 AM start
+  "active_end": 23,               // 11 PM end
+  "random_delays": true           // Randomize within 1-5 min range
 }
 ```
 
 ### **What This Means:**
-- ⏰ **3-15 minute delays** between each relay (not seconds)
-- 📊 **6 messages/hour max** (extremely conservative)
-- 🍽️ **Meal time breaks** (lunch/dinner often skipped)
-- 💤 **Random idle periods** (30min-2hr of no activity)
-- 📅 **Weekend slowdown** (mimics casual usage)
+- ⏰ **1-5 minute delays** between each relay (practical speed)
+- 📊 **15 messages/hour max** (good coverage, not overwhelming)
+- 🕐 **Consistent daily pattern** (no complex idle periods)
+- 📅 **Same speed every day** (weekdays and weekends)
+- 🎯 **120 message daily limit** (safety cap)
 
 ---
 
