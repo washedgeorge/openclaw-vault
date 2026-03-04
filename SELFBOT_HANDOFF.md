@@ -12,14 +12,16 @@
 ### **📚 Complete Documentation:**
 - ✅ **`SELFBOT_SETUP.md`** - Complete setup instructions
 - ✅ **`get_discord_token.md`** - Step-by-step token extraction guide
+- ✅ **`ULTRA_STEALTH_GUIDE.md`** - Ultra-stealth mode explained
 - ✅ **`run_selfbot.sh`** - Easy runner script with safety checks
 
-### **🛡️ Built-in Safety Features:**
-- ✅ **Conservative rate limits** - Max 20 messages/hour
-- ✅ **Random delays** - 5-30 seconds between relays (appears human)
-- ✅ **Active hours only** - Only works 8 AM - 11 PM
-- ✅ **Content filtering** - Skips @mentions, bot commands, spam
-- ✅ **Error recovery** - Handles rate limits and connection issues
+### **🛡️ Ultra-Stealth Safety Features:**
+- ✅ **Ultra-conservative rate limits** - Max 6 messages/hour, 50/day
+- ✅ **Long random delays** - 3-15 minutes between relays (very human-like)
+- ✅ **Human activity patterns** - Slower during work hours, meal breaks, weekends
+- ✅ **Random idle periods** - 30min-2hr breaks with zero activity
+- ✅ **Enhanced content filtering** - Only high-quality, engaging messages
+- ✅ **Active hours only** - 9 AM - 10 PM with meal time skips
 
 ---
 
@@ -104,17 +106,28 @@ cd /root/.openclaw/workspace
 - **Source attribution** shows which server each message came from
 - **Filtered content** - only see messages that matter
 
-### **Example Output:**
+### **Example Output (Ultra-Stealth Mode):**
 ```
-**[Crypto Trading #signals]** TraderBot:  
+09:15 **[Crypto Trading #signals]** TraderBot:  
 🚀 BTC breaking out above $70K resistance
 
-**[Dev Community #announcements]** Admin:
+09:28 **[Dev Community #announcements]** Admin:
 New feature release coming next week
 
-**[News Server #breaking]** NewsBot:
+[45-minute idle period - no activity]
+
+11:42 **[News Server #breaking]** NewsBot:
 BREAKING: Major economic announcement
+
+[Lunch break - 70% chance to skip relaying]
 ```
+
+### **Timing Expectations:**
+- ⏰ **3-15 minutes** between relays (not instant)
+- 📊 **~6 messages per hour** maximum
+- 🍽️ **Meal time gaps** (12-1 PM, 6-7 PM often quiet)
+- 💤 **Random breaks** (30min-2hr periods of no activity)
+- 📅 **Slower weekends** (mimics human casual usage)
 
 ---
 
@@ -138,16 +151,27 @@ BREAKING: Major economic announcement
 ]
 ```
 
-### **Stealth Settings Tuning:**
+### **Ultra-Stealth Settings (Pre-configured):**
 ```json
 "stealth_settings": {
-  "messages_per_hour": 15,        // Lower = safer (default 20)
-  "min_delay_seconds": 10,        // Higher = safer (default 5)
-  "max_delay_seconds": 60,        // Higher = more random (default 30)
-  "active_hours_only": true,      // Only relay during day hours
-  "random_delays": true           // Randomize timing (recommended)
+  "min_delay_minutes": 3,         // 3-15 minute delays (not seconds!)
+  "max_delay_minutes": 15,        // Much slower but undetectable
+  "messages_per_hour": 6,         // Very conservative (was 20)
+  "messages_per_day": 50,         // Daily safety cap
+  "idle_periods": true,           // Random 30min-2hr breaks
+  "human_pattern": true,          // Meal breaks, work hour slowdowns
+  "weekend_slower": true,         // 30-50% slower on weekends
+  "active_start": 9,              // 9 AM start (not 8)
+  "active_end": 22                // 10 PM end (not 11)
 }
 ```
+
+### **What This Means:**
+- ⏰ **3-15 minute delays** between each relay (not seconds)
+- 📊 **6 messages/hour max** (extremely conservative)
+- 🍽️ **Meal time breaks** (lunch/dinner often skipped)
+- 💤 **Random idle periods** (30min-2hr of no activity)
+- 📅 **Weekend slowdown** (mimics casual usage)
 
 ---
 

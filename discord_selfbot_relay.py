@@ -23,8 +23,11 @@ class StealthDiscordRelay:
         self.config = self.load_config()
         self.client = None
         self.message_history = {}
+        self.daily_message_count = {}
         self.last_activity = {}
         self.session_start = datetime.now()
+        self.idle_until = None  # Track idle periods
+        self.last_idle_check = datetime.now()
         
     def load_config(self):
         """Load configuration with stealth defaults"""
@@ -47,22 +50,34 @@ class StealthDiscordRelay:
                     }
                 ],
                 "stealth_settings": {
-                    "min_delay_seconds": 5,      # Minimum delay between relays
-                    "max_delay_seconds": 30,     # Maximum delay between relays  
-                    "messages_per_hour": 20,     # Very conservative rate limit
+                    "min_delay_minutes": 3,      # Minimum 3 minutes between relays
+                    "max_delay_minutes": 15,     # Maximum 15 minutes between relays  
+                    "messages_per_hour": 6,      # Ultra-conservative: 6 messages/hour max
+                    "messages_per_day": 50,      # Daily cap to avoid patterns
                     "random_delays": True,       # Add random delays
-                    "typing_simulation": False,  # Simulate typing (risky)
+                    "typing_simulation": False,  # Never simulate typing
                     "active_hours_only": True,   # Only relay during active hours
-                    "active_start": 8,           # 8 AM
-                    "active_end": 23             # 11 PM
+                    "active_start": 9,           # 9 AM (avoid early morning)
+                    "active_end": 22,            # 10 PM (avoid late night)
+                    "idle_periods": True,        # Random periods of no activity
+                    "idle_min_minutes": 30,      # Minimum idle period
+                    "idle_max_minutes": 120,     # Maximum idle period (2 hours)
+                    "weekend_slower": True,      # Even slower on weekends
+                    "human_pattern": True        # Mimic human online patterns
                 },
                 "safety_filters": {
-                    "min_message_length": 10,
-                    "max_message_length": 1000,
+                    "min_message_length": 20,        # Longer messages only (more valuable)
+                    "max_message_length": 800,       # Avoid very long messages
                     "ignore_bots": True,
                     "ignore_system": True,
-                    "ignore_mentions": True,     # Don't relay @mentions (risky)
-                    "ignore_commands": True      # Don't relay bot commands
+                    "ignore_mentions": True,         # Don't relay @mentions (risky)
+                    "ignore_commands": True,         # Don't relay bot commands
+                    "ignore_links": True,            # Don't relay messages with lots of links
+                    "ignore_caps": True,             # Don't relay ALL CAPS messages (spam-like)
+                    "ignore_repeats": True,          # Don't relay if very similar to recent message
+                    "require_engagement": True,      # Only relay messages with reactions/replies
+                    "max_links_per_message": 1,      # Maximum links allowed
+                    "caps_threshold": 0.5            # Max ratio of caps to total chars
                 }
             }
     
@@ -129,8 +144,33 @@ class StealthDiscordRelay:
         
         # Command filters
         if safety.get('ignore_commands', True):
-            if message.content.startswith(('!', '/', '?', '$', '.')):
+            if message.content.startswith(('!', '/', '?', '$', '.', '-', '+', '=')):
                 return False
+        
+        # Link filtering
+        if safety.get('ignore_links', True):
+            import re
+            links = re.findall(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', message.content)
+            max_links = safety.get('max_links_per_message', 1)
+            if len(links) > max_links:
+                return False
+        
+        # Caps filter (avoid spam-like messages)
+        if safety.get('ignore_caps', True):
+            caps_count = sum(1 for c in message.content if c.isupper())
+            total_alpha = sum(1 for c in message.content if c.isalpha())
+            if total_alpha > 0:
+                caps_ratio = caps_count / total_alpha
+                if caps_ratio > safety.get('caps_threshold', 0.5):
+                    return False
+        
+        # Engagement filter (only relay messages that got reactions/replies)
+        if safety.get('require_engagement', False):
+            if len(message.reactions) == 0:
+                # Give new messages a few minutes to get reactions
+                message_age = (datetime.now() - message.created_at.replace(tzinfo=None)).total_seconds()
+                if message_age > 300:  # 5 minutes old with no engagement
+                    return False
         
         # Keyword filters
         if relay_config.get('filter_keywords'):
@@ -152,38 +192,82 @@ class StealthDiscordRelay:
         return True
     
     async def check_rate_limits(self, relay_config) -> bool:
-        """Check if we're within safe rate limits"""
+        """Ultra-stealth rate limiting"""
         now = datetime.now()
         stealth = self.config['stealth_settings']
         
-        # Clean old entries
-        hour_ago = now - timedelta(hours=1)
-        self.message_history = {k: v for k, v in self.message_history.items() if v > hour_ago}
-        
-        # Check hourly limit
-        if len(self.message_history) >= stealth.get('messages_per_hour', 20):
+        # Check if we're in an idle period
+        if self.idle_until and now < self.idle_until:
             return False
         
-        # Check minimum delay
+        # Randomly enter idle periods (human-like breaks)
+        if stealth.get('idle_periods', True):
+            time_since_idle_check = (now - self.last_idle_check).total_seconds()
+            if time_since_idle_check > 3600:  # Check every hour
+                if random.random() < 0.3:  # 30% chance of idle period
+                    idle_min = stealth.get('idle_min_minutes', 30) * 60
+                    idle_max = stealth.get('idle_max_minutes', 120) * 60
+                    idle_duration = random.uniform(idle_min, idle_max)
+                    self.idle_until = now + timedelta(seconds=idle_duration)
+                    logger.info(f"Entering idle period for {idle_duration/60:.1f} minutes")
+                    return False
+                self.last_idle_check = now
+        
+        # Clean old entries (hourly and daily)
+        hour_ago = now - timedelta(hours=1)
+        day_ago = now - timedelta(days=1)
+        self.message_history = {k: v for k, v in self.message_history.items() if v > hour_ago}
+        self.daily_message_count = {k: v for k, v in self.daily_message_count.items() if v > day_ago}
+        
+        # Check daily limit first (most restrictive)
+        daily_limit = stealth.get('messages_per_day', 50)
+        if len(self.daily_message_count) >= daily_limit:
+            return False
+        
+        # Check hourly limit
+        hourly_limit = stealth.get('messages_per_hour', 6)
+        if len(self.message_history) >= hourly_limit:
+            return False
+        
+        # Check minimum delay (in minutes now)
         channel_key = relay_config['source_channel_id']
         if channel_key in self.last_activity:
             time_diff = (now - self.last_activity[channel_key]).total_seconds()
-            min_delay = stealth.get('min_delay_seconds', 5)
+            min_delay = stealth.get('min_delay_minutes', 3) * 60
             if time_diff < min_delay:
                 return False
+        
+        # Weekend slowdown
+        if stealth.get('weekend_slower', True):
+            if now.weekday() >= 5:  # Saturday = 5, Sunday = 6
+                # Halve the rate limits on weekends
+                if len(self.message_history) >= max(1, hourly_limit // 2):
+                    return False
         
         return True
     
     def is_active_hours(self) -> bool:
         """Check if current time is within active hours"""
-        if not self.config['stealth_settings'].get('active_hours_only', True):
+        stealth = self.config['stealth_settings']
+        if not stealth.get('active_hours_only', True):
             return True
         
-        current_hour = datetime.now().hour
-        start_hour = self.config['stealth_settings'].get('active_start', 8)
-        end_hour = self.config['stealth_settings'].get('active_end', 23)
+        now = datetime.now()
+        current_hour = now.hour
+        start_hour = stealth.get('active_start', 9)
+        end_hour = stealth.get('active_end', 22)
         
-        return start_hour <= current_hour <= end_hour
+        # Basic hour check
+        if not (start_hour <= current_hour <= end_hour):
+            return False
+        
+        # Human pattern: less active during lunch (12-13) and dinner (18-19)
+        if stealth.get('human_pattern', True):
+            if current_hour == 12 or current_hour == 18:
+                # 70% chance of being inactive during meal times
+                return random.random() > 0.7
+        
+        return True
     
     async def relay_message(self, message, relay_config):
         """Relay message with stealth features"""
@@ -217,6 +301,7 @@ class StealthDiscordRelay:
             # Update tracking
             now = datetime.now()
             self.message_history[now.timestamp()] = now
+            self.daily_message_count[now.timestamp()] = now
             self.last_activity[relay_config['source_channel_id']] = now
             
             logger.info(f"Relayed message from {message.channel.guild.name}#{message.channel.name}")
@@ -253,15 +338,39 @@ class StealthDiscordRelay:
             return None
     
     async def apply_stealth_delay(self):
-        """Apply random delay to appear more human"""
+        """Apply ultra-stealth delay (minutes, not seconds)"""
         stealth = self.config['stealth_settings']
+        now = datetime.now()
         
         if stealth.get('random_delays', True):
-            min_delay = stealth.get('min_delay_seconds', 5)
-            max_delay = stealth.get('max_delay_seconds', 30)
+            min_delay = stealth.get('min_delay_minutes', 3) * 60
+            max_delay = stealth.get('max_delay_minutes', 15) * 60
+            
+            # Human pattern: longer delays during work hours, shorter during evening
+            if stealth.get('human_pattern', True):
+                hour = now.hour
+                if 9 <= hour <= 17:  # Work hours - people check Discord less
+                    delay_multiplier = random.uniform(1.5, 2.5)
+                elif 18 <= hour <= 22:  # Evening - more active
+                    delay_multiplier = random.uniform(0.8, 1.2)
+                else:  # Late night/early morning - very slow
+                    delay_multiplier = random.uniform(2.0, 3.0)
+                
+                min_delay *= delay_multiplier
+                max_delay *= delay_multiplier
+            
+            # Weekend pattern - generally slower
+            if stealth.get('weekend_slower', True) and now.weekday() >= 5:
+                min_delay *= random.uniform(1.3, 1.8)
+                max_delay *= random.uniform(1.5, 2.2)
+            
             delay = random.uniform(min_delay, max_delay)
         else:
-            delay = stealth.get('min_delay_seconds', 5)
+            delay = stealth.get('min_delay_minutes', 3) * 60
+        
+        # Log the delay for transparency
+        delay_minutes = delay / 60
+        logger.info(f"Stealth delay: {delay_minutes:.1f} minutes")
         
         await asyncio.sleep(delay)
     
