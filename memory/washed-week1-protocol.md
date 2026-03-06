@@ -2,14 +2,16 @@
 
 ## Meals
 
+### Pre-Workout
+- Grass-fed protein bar (240 cal / 20P / 21C / 11F)
+
 ### Meal 1 — Afternoon (post-workout)
 - Greek yogurt 170g (100 cal / 19P / 7C)
-- Granola 30g (120 cal / 5P / 17C / 4F)
 - Protein powder 28g (90 cal / 20P)
 - Banana (105 cal / 1P / 27C)
 - Honey 1 tbsp (60 cal / 17C)
 - Bone broth 240ml (50 cal / 11P)
-→ **525 cal / 56P / 68C / 4F**
+→ **405 cal / 51P / 51C / 0F**
 
 ### Meal 2 — Dinner
 - NY strip 1lb trimmed (880 cal / 112P / 44F)
@@ -17,10 +19,7 @@
 - Honey 1 tbsp (60 cal / 17C)
 → **1,070 cal / 114P / 47C / 44F**
 
-### Bone broth (extra throughout day)
-- 240ml (50 cal / 11P)
-
-### Daily Total: ~1,645 cal / 181P / 115C / 48F
+### Daily Total: ~1,715 cal / 185P / 119C / 55F
 
 ---
 
@@ -65,11 +64,11 @@
 
 | Day | AM | PM | Bed |
 |-----|----|----|-----|
-| Mon | MOTS-C → Train | Meal 1 → Walk → Meal 2 → Walk | Tesa + Ipa |
-| Tue | — | Train → Meals + Walks | Tesa + Ipa |
+| Mon | MOTS-C → Protein bar → Train | Meal 1 → Walk → Meal 2 → Walk | Tesa + Ipa |
+| Tue | Protein bar → Train | Meal 1 → Walk → Meal 2 → Walk | Tesa + Ipa |
 | Wed | — | Active recovery / walk | Tesa + Ipa |
-| Thu | MOTS-C → Train | Meal 1 → Walk → Meal 2 → Walk | Tesa + Ipa |
-| Fri | — | Train → Meals + Walks | Tesa + Ipa |
+| Thu | MOTS-C → Protein bar → Train | Meal 1 → Walk → Meal 2 → Walk | Tesa + Ipa |
+| Fri | Protein bar → Train | Meal 1 → Walk → Meal 2 → Walk | Tesa + Ipa |
 | Sat | — | Light activity | Tesa + Ipa |
 | Sun | — | Rest / walk | Tesa + Ipa |
 
@@ -81,4 +80,4 @@ BPC-157 at knee: daily, any time.
 - Weight (daily, same time)
 - Waist measurement (Monday AM)
 - Energy level (1-10)
-- Protein hit? (181g target)
+- Protein hit? (185g target)
